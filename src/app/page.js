@@ -9,7 +9,7 @@ const Home = () => {
 
   const fetchQuote = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/quote");
+      const response = await axios.get("http://localhost:3001/api/quote");
       const data = await response.data;
       setQuote(data.quote);
     } catch (error) {
